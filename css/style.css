@@ -14,6 +14,9 @@ nav {
     justify-content: space-between;
     background: #1876f2;
     padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
@@ -42,6 +45,10 @@ nav {
     cursor: pointer;
 }
 
+.nav-user-icon {
+    margin-left: 30px;
+}
+
 .search-box {
     background: #efefef;
     width: 350px;
@@ -55,5 +62,74 @@ nav {
     width: 18px;
 }
 
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.right-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.main-content {
+    flex-basis: 47%;
+}
+
+.imp-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+
+.imp-links a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.imp-links a:last-child {
+    color: #1876f2;
+}
+
+.imp-links {
+    border-bottom: 1px solid #ccc;
+}
 
 
